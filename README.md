@@ -61,4 +61,4 @@ Created for learning and demonstrating
 digital marketing and web development skills.
 ## Project Preview
 
-[Skincare Facebook Ad](screenshots/skincare-ad.png)
+![Facebook Ad creative](screenshots/skincare-ad.png)

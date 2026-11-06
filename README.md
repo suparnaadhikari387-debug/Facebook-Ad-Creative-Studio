@@ -59,3 +59,6 @@ Personal Portfolio Project
 
 Created for learning and demonstrating
 digital marketing and web development skills.
+## Project Preview
+
+[Skincare Facebook Ad](screenshots/skincare-ad.png)

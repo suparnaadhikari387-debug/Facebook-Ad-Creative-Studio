@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Ad Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AdCreative Studio</h1>
+    <p>Create beautiful social media advertisements</p>
+</header>
+
+<main class="container">
+
+    <section class="editor">
+        <h2>Design Your Advertisement</h2>
+
+        <label>Brand Name</label>
+        <input type="text" id="brand" value="Glow Beauty">
+
+        <label>Ad Headline</label>
+        <input type="text" id="headline"
+            value="Glow Naturally, Shine Brightly">
+
+        <label>Ad Description</label>
+        <textarea id="description">Discover our new skincare collection. Give your skin the care it deserves!</textarea>
+
+        <label>Upload Product Image</label>
+        <input type="file" id="imageUpload" accept="image/*">
+
+        <label>Background Color</label>
+        <input type="color" id="bgColor" value="#fce4ec">
+
+        <label>Text Color</label>
+        <input type="color" id="textColor" value="#333333">
+
+        <label>Call To Action</label>
+        <select id="cta">
+            <option>Shop Now</option>
+            <option>Learn More</option>
+            <option>Sign Up</option>
+            <option>Contact Us</option>
+            <option>Book Now</option>
+        </select>
+
+        <button id="downloadBtn">Download Advertisement</button>
+    </section>
+
+    <section class="preview-section">
+        <h2>Live Ad Preview</h2>
+
+        <div id="adPreview" class="ad-preview">
+
+            <div class="brand-name" id="showBrand">
+                Glow Beauty
+            </div>
+
+            <h2 id="showHeadline">
+                Glow Naturally, Shine Brightly
+            </h2>
+
+            <p id="showDescription">
+                Discover our new skincare collection.
+                Give your skin the care it deserves!
+            </p>
+
+            <img id="showImage"
+                src=""
+                alt="Product image"
+                style="display:none;">
+
+            <button id="showCTA">Shop Now</button>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Designed with creativity | AdCreative Studio</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

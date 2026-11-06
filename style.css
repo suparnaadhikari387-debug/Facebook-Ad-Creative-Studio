@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+header {
+    background: #252b48;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.editor {
+    background: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+.editor h2,
+.preview-section h2 {
+    margin-bottom: 20px;
+    color: #252b48;
+}
+
+.editor label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.editor input,
+.editor textarea,
+.editor select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.editor textarea {
+    height: 85px;
+    resize: vertical;
+}
+
+.editor input[type="color"] {
+    height: 45px;
+    padding: 4px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+#downloadBtn {
+    background: #4267b2;
+    color: white;
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#downloadBtn:hover {
+    background: #29487d;
+}
+
+.preview-section {
+    text-align: center;
+}
+
+.ad-preview {
+    width: 360px;
+    height: 360px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #fce4ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000020;
+}
+
+.brand-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ad-preview h2 {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.ad-preview p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.ad-preview img {
+    width: 130px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.ad-preview button {
+    background: #252b48;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .editor {
+        width: 100%;
+    }
+
+    .ad-preview {
+        width: min(360px, 90vw);
+        height: min(360px, 90vw);
+    }
+}
